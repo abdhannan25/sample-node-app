@@ -36,4 +36,11 @@
       "last 1 safari version"
     ]
   }
+  {
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest"
+    }
+  }
+}
 }
