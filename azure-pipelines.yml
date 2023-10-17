@@ -18,7 +18,7 @@ variables:
   environmentName: 'cicd-webapp-node-01'
 
   # Agent VM image name
-  vmImageName: 'default'
+  #vmImageName: 'default'
 
 stages:
 - stage: Build
@@ -27,7 +27,8 @@ stages:
   - job: Build
     displayName: Build
     pool:
-      vmImage: $(vmImageName)
+      name: 'default'
+      #vmImage: $(vmImageName)
 
     steps:
     - task: NodeTool@0
