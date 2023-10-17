@@ -9,16 +9,16 @@ trigger:
 variables:
 
   # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: '07b7e168-383c-4efd-8b41-3971999b730a'
+  azureSubscription: 'f61ba9c9-f870-41ef-9c01-437c11a7de52'
 
   # Web app name
-  webAppName: 'node-webapp-01'
+  webAppName: 'webapp-cicd-node'
 
   # Environment name
-  environmentName: 'node-webapp-01'
+  environmentName: 'webapp-cicd-node'
 
   # Agent VM image name
-  vmImageName: 'ubuntu-latest'
+  vmImageName: 'Windows-10'
 
 stages:
 - stage: Build
