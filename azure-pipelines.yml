@@ -63,7 +63,8 @@ stages:
     displayName: Deploy
     environment: $(environmentName)
     pool:
-      vmImage: $(vmImageName)
+      name: 'default'
+      #vmImage: $(vmImageName)
     strategy:
       runOnce:
         deploy:
